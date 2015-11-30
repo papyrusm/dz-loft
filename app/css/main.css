@@ -4,11 +4,11 @@ html {
 body {
 	height: 100%;
 	background-color: #fbfcfd;
-	font: normal 1em 'arial, tahoma, sans-serif';
+	font: 400 1em fira_sanslight;
 	color: #4a545d;
 }
 
-/*шапка start*/
+/*header start*/
 .header {
 	position: relative;
 	height: 119px;
@@ -40,7 +40,7 @@ body {
 	left: 0;
 	top: 36px;
 }
-/*шапка end*/
+/*header end*/
 
 /*social links block start*/
 .header .socials {
@@ -77,18 +77,18 @@ body {
 .socials .socials-link.vk:hover {background-position: -53px -104px;}
 /*social links block end*/
 
-/*main content start*/
-.sidebar {
-	width: 250px;
-	float: left;
+/*sidebar navigation start*/
+.container-main {
+	width: 960px;
+	margin: 0 auto;
 }
 .content {
 	width: 650px;
 	float: left;
 }
-.container-main {
-	width: 960px;
-	margin: 0 auto;
+.sidebar {
+	width: 250px;
+	float: left;
 }
 .navigation {
 	overflow: hidden;
@@ -110,10 +110,14 @@ body {
 }
 .navigation .navigation-item.active {
 	background-color: #3ba8c0;
-	margin: 0;
-	margin-bottom: -2px; /*убираем бордер-топ у активного эллемента*/
-	padding-left: 11px;
+	font-size: 22px;
+	margin: 0 0 -2px; /*убираем бордер-топ у активного эллемента*/
 	border-bottom: none;
+	padding-left: 11px;
+
+}
+.navigation .navigation-item.active .navigation-links {
+	font-size: 22px;
 }
 .navigation .navigation-links {
 	display: block;
@@ -121,11 +125,56 @@ body {
 	color: #959aa8;
 	text-decoration: none;
 	margin-left: 16px;
-	padding: 25px 0;
+	padding: 20px 0;
+	font-family: fira_sansbook;
 }
 .navigation .navigation-item.active .navigation-links {
 	color: #ffffff;
 }
 .navigation .navigation-links:hover {
 	color: #3ba8c0;
+}
+/*sidebar navigation end*/
+
+/*sidebar contact start*/
+.sidebar-contact {
+	font-family: fira_sansbook;
+	overflow: hidden;
+	font-style: normal;
+	background-color: #3ba8c0;
+	border-radius: 4px;
+}
+.sidebar-contact .contact-header {
+	font-size: 20px;
+	padding: 8px 19px 1px;
+	color: #fbfcfd;
+}
+.sidebar-contact .contact-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.sidebar-contact .contact-item {
+	padding: 6px 0 6px 83px;
+}
+.sidebar-contact .contact-links {
+	display: block;
+	text-decoration: none;
+	color: #fbfcfd;
+}
+.sidebar-contact .contact-text {
+	font-size: 15px;
+	line-height: 1.3;
+}
+.sidebar-contact .contact-text:hover {
+	border-bottom: 1px solid #fff;
+}
+.sidebar-contact .contact-mail {
+	background-color: #41b9d4;
+}
+.sidebar-contact .contact-phone {
+	background-color: #48cbe8;
+}
+.sidebar-contact .contact-nickname {
+	background-color: #51daf8;
 }
