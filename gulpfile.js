@@ -37,4 +37,4 @@ gulp.task('watch', function () {
 });
 
 //дефолт задача
-gulp.task('default', ['connect', 'watch'])
+gulp.task('default', ['connect', 'watch']);

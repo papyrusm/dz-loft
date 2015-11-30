@@ -2,13 +2,73 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>loftschool</title>
+	<link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="bower/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript">
-   
-</script>
 </head>
 <body>
-	Hello World!
+	<div class="wrapper">
+		<header class="header">
+			<div class="container-head">
+				<a href="#" class="header-logo-link">
+					<img class="logo-img" src="img/logo.png" alt="loftschool">
+					<span class="header-logo-text">loftschool</span>
+				</a>
+				<ul class="socials">
+					<li class="socials-item"><a href="#" class="socials-link vk">vkontakte</a></li>
+					<li class="socials-item"><a href="#" class="socials-link tw">twitter</a></li>
+					<li class="socials-item"><a href="#" class="socials-link fb">facebook</a></li>
+					<li class="socials-item"><a href="#" class="socials-link gh">github</a></li>
+				</ul>
+			</div>
+		</header>
+		<div class="container-main">
+			<aside class="sidebar">
+				<nav class="navigation">
+					<ul class="navigation-list">
+							<li class="navigation-item active"><a href="#" class="navigation-links">Обо мне</a></li>
+							<li class="navigation-item"><a href="#" class="navigation-links">Мои работы</a></li>
+							<li class="navigation-item"><a href="#" class="navigation-links">Связаться со мной</a></li>
+						</ul>
+				</nav>
+				<nav class="sidebar-contact">
+				<div class="sidebar-contact-header">Контакты</div>
+					<ul class="sidebar-menu-list">
+						<li class="sidebar-contact-item"><a href="#" class="sidebar-contact-links">pochta@mail.ru</a></li>
+						<li class="sidebar-contact-item"><a href="#" class="sidebar-contact-links">+79812342323</a></li>
+						<li class="sidebar-contact-item"><a href="#" class="sidebar-contact-links">nickname</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<main class="content">
+				<article class="main-info">
+					<header class="article-header">
+						<h2>Основная информация</h2>
+					</header>
+					<div class="main-info-avatar"></div>
+					<div class="main-info-text"></div>
+				</article>
+				<article class="work-exp">
+					<header class="article-header">
+						<h2>Опыт работы</h2>
+					</header>
+					<div class="work-exp-content">
+						<ul class="work-exp-list">
+							<li class="work-exp-item">
+								<span class="work-exp-text">"ИП Боровицкий" - Продавец дисков</span><br>
+								<span class="work-exp-data">Сентябрь 2005 - Август 2008</span>
+							</li>
+							<li class="work-exp-item">
+								<span class="work-exp-links">"ООО Системы безопастности" - Системный администратор</span><br>
+								<span class="work-exp-data">Июнь 2008 - Июль 2010</span>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</main>
+		</div>
+		<footer class="footer"></footer>
+	</div>
 </body>
 </html>
