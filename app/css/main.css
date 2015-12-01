@@ -84,7 +84,7 @@ body {
 }
 .content {
 	width: 650px;
-	float: left;
+	float: right;
 }
 .sidebar {
 	width: 250px;
@@ -146,7 +146,7 @@ body {
 }
 .sidebar-contact .contact-header {
 	font-size: 20px;
-	padding: 8px 19px 1px;
+	padding: 8px 0	1px 19px;
 	color: #fbfcfd;
 }
 .sidebar-contact .contact-list {
@@ -155,12 +155,12 @@ body {
 	padding: 0;
 }
 .sidebar-contact .contact-item {
-	padding: 6px 0 6px 83px;
 }
 .sidebar-contact .contact-links {
 	display: block;
 	text-decoration: none;
 	color: #fbfcfd;
+	padding: 6px 0 6px 83px;
 }
 .sidebar-contact .contact-text {
 	font-size: 15px;
@@ -169,12 +169,22 @@ body {
 .sidebar-contact .contact-text:hover {
 	border-bottom: 1px solid #fff;
 }
-.sidebar-contact .contact-mail {
-	background-color: #41b9d4;
+.sidebar-contact .contact-item {
+    background-image: url(../img/contacts.png);
+    background-repeat: no-repeat;
+    display: block;
 }
-.sidebar-contact .contact-phone {
-	background-color: #48cbe8;
+.sidebar-contact .contact-item-mail {
+    background-position: 0 -30px;
+    background-color: #41b9d4;
 }
-.sidebar-contact .contact-nickname {
-	background-color: #51daf8;
+.sidebar-contact .contact-item-phone {
+		background-position: 0 -126px;
+    background-color: #48cbe8;
 }
+.sidebar-contact .contact-item-skype {
+		background-position: 0 -226px;
+    background-color: #51daf8;
+}
+
+/*sidebar contact end*/
