@@ -7,7 +7,18 @@ body {
 	font: 400 1em fira_sanslight;
 	color: #4a545d;
 }
-
+.wrapper {
+	min-width: 970px;
+	position: relative;
+	min-height: 100%;
+	height: auto!important;
+	overflow: hidden;
+}
+.wrapper:after {
+	content: "";
+	height: 80px;
+	display: block;
+}
 /*header start*/
 .header {
 	position: relative;
@@ -47,8 +58,11 @@ body {
 	position: absolute;
 	right: 0;
 	top: 36px;
+}
+.socials {
 	margin: 0;
 	padding: 0;
+	min-width: 262px;
 }
 .socials .socials-item {
 	list-style: none;
@@ -81,6 +95,11 @@ body {
 .container-main {
 	width: 960px;
 	margin: 0 auto;
+}
+.container-main:after {
+	content: " ";
+	clear: both;
+	display: table;
 }
 .content {
 	width: 650px;
@@ -179,7 +198,7 @@ body {
     background-color: #41b9d4;
 }
 .sidebar-contact .contact-item-phone {
-		background-position: 0 -126px;
+		background-position: 0 -130px;
     background-color: #48cbe8;
 }
 .sidebar-contact .contact-item-skype {
@@ -188,3 +207,63 @@ body {
 }
 
 /*sidebar contact end*/
+/*content start*/
+
+/*content end*/
+/*footer start*/
+.footer {
+	height: 80px;
+	margin-top: -80px;	
+	background-color: #eff3f7;
+}
+.footer:before {
+	display: block;
+	content: " ";
+  background-image: -moz-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(28,102,122) 0%, rgb(246,250,254) 0%, rgb(216,216,216) 0%, rgb(242,246,250) 0%, rgb(135,174,186) 28%, rgb(28,102,122) 48%, rgb(135,174,186) 71%, rgb(242,246,250) 100%);
+  height: 3px;
+  width: 100%;
+}
+.footer .footer-wrapper {
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 23px;
+
+}
+.footer .lock {
+	position: absolute;
+	left: 31px;
+	top: 26px;
+}
+.footer .lock-link {
+	display: block;
+	background: url(../img/lock.png) no-repeat;
+	height: 32px;
+	width: 20px;
+	padding-left: 24px;
+	text-decoration: none;
+	color: #4a545d;
+	font-family: fira_sansbook;
+	font-size: 16px;
+	line-height: 2.2;
+}
+.footer .lock-link:hover {
+	display: block;
+	background: url(../img/lock-hover.png) no-repeat;
+	height: 32px;
+	width: 20px;
+	padding-left: 24px;
+	text-decoration: underline;
+}
+.footer .footer-text {
+	margin: 0 180px;
+	font-family: fira_sanslight;
+	font-size: 13px;
+	padding-top: 9px;
+	color: #4a545d;
+	text-align: center;
+	/*padding: 0;*/
+}
+/*footer end*/
